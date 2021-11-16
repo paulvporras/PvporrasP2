@@ -1,0 +1,787 @@
+/* STYLE SHEET */
+/*
+COLORS
+#fffcf5 ecru
+#a39e93 ecru
+#c94a00 orange
+#a13b00 dark orange
+#66615a brown
+#ffffff white
+#ec5e28 bright orange
+#f1eae1 light ecru
+#67625e
+#66625b dark clay
+#252321 almsot black grey
+
+FONTS
+Roboto San Serif
+h1 - 74px 300weight uppercase
+	span - 700weight
+	simply - 70px normal weight
+h2 - 20px bolder
+h3
+h4
+h5
+h6
+body - 16px
+header - 14px
+
+/** GLOBAL STYLING  **/
+
+/* ======================================= */
+
+/* Box Model fix */
+
+html {box-sizing: border-box;}
+	
+*, *:before, *:after {box-sizing: inherit;}
+
+/* ======================================= */
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ======================================= */
+
+/* Image baseline */
+
+img {
+	max-width: 100%;
+}
+
+
+/* Typography */
+
+	body {
+		background-color: #fffcf5; /* ecru */
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		color: #242321;	
+	}
+
+	p {
+		font-size: 1em;
+		line-height: 160%;
+	}
+
+	h1 {
+		font-size: 60px
+	}
+
+	h2 {
+		font-size: 20px;
+		font-weight: bolder;
+	}
+
+	h5 {
+		width: fixed;
+		margin: auto;
+		/*background: lightseagreen;*/
+		text-align: center;
+	}
+
+	a {
+		color: #c94a00; /* orange */
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #a13b00; /* dark orange */
+	}
+
+/* ======================================= */
+
+/* header  ===   
+uses classes: "row" "added-margin"
+uses IDs: "download", "facebook-icon", "twitter-icon"
+uses Combinators: 
+	descendants of the 'header' selector
+	descendants of the 'header' selector that are <li> lists items and have an id name  
+
+*/
+
+	header .row {
+		margin-top:  25px;
+		margin-bottom: 20px;
+	}
+
+	header {
+		background-color: #fffcf5;
+	}
+
+	header li img {
+		margin:  0;
+	}
+
+	header li a {
+		text-decoration: none;
+		font-weight: 600;
+		color: #66615a;
+		font-size: 14px;
+	}
+
+	header li a:hover {
+		color: #c94a00; /* orange */
+	}
+
+	header ul {
+		list-style: none;
+		margin: 10px;
+	}
+
+	header li {
+		float: left;
+		margin: 10px;
+
+	}
+
+	header li a {
+		text-transform: uppercase;
+	}
+
+	header li#download {
+		margin: 10px;
+	}
+
+	header li#download a {
+		border: solid 2px #66615a;
+		padding: 5px 10px;
+		border-radius: 16px;
+	}
+
+	header li#download a:hover {
+		color: #ffffff; /* white */
+		background: #66615a; /* brown */
+	}
+	header .socials {
+		margin:  4px 5px 0 5px;
+	}
+
+	header #facebook-icon {
+		margin-left: 25px;
+	}
+
+	header #twitter-icon {}
+
+/* this is there the @media stuff will go
+	header nav ul {
+		margin-left: 15px;
+	}
+*/
+
+/* ================================================================= *//*
+HOMEPAGE STYLE GOES NEXT
+/* ================================================================= */ 
+
+/* hero section  ===   
+uses classes: "row" "button"
+uses IDs: "hero", "buy-now", "watch-video"
+uses Combinators: 
+	class: button for <a> tags
+	ID: buy-now hover interaction <a> tags
+*/ 
+	#hero {
+		background-image: url("../images/hero1.jpg");
+		background-size: cover;
+		background-color: #66615a;  /*temporary brown so text shows up */
+		height:  82vh;
+	}
+
+	#hero h1 {
+		font-size: 74px;
+		text-transform: uppercase;
+		font-weight: 300;
+		color:  #fff;
+		margin-top:  150px;
+		margin-bottom: 25px;
+	}
+
+	#hero h1 span {
+		font-weight: 700;
+	}
+
+	#hero a {
+		color: #fff; /* this the short code for white */
+		font-weight: normal;
+	}
+
+	#hero a:hover {
+		color: #c94a00; /* orange */
+	}
+
+	a#buy-now {
+		padding: 10px 20px;
+		border-radius: 20px;
+		color: white;
+		background-color: #ec5e28;
+		margin-top: 18px;
+		margin-right: 80px;
+	}
+
+	a#buy-now:hover {
+
+	}
+
+	#watch {
+		margin-top: 100px;
+	}
+
+
+/* Surface Pressure  ===   
+uses classes: "row"
+uses IDs: "surface-pressure"
+*/ 
+
+#surface-pressure .row {
+	color: #67625e;
+}
+
+#surface-pressure h2 {
+	line-height: 80%;
+}
+
+/* Simply Works  ===   
+uses classes: "sw-icon-adjust-1", "sw-icon-adjust-2"
+uses IDs: "simply-works", "simply-header", "simply-features", "kiss"
+*/ 
+
+#simply-works {
+	text-align: center;
+}
+
+#simply-header {
+
+}
+
+#simply-header p {
+
+}
+
+#simply-works h1 {
+	color: #66625b; /* dark clay */
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 1;
+}
+
+#simply-works h2 {
+	color: #272121;
+}
+
+#simply-features p {
+	text-align: left;
+}
+
+/* ================================== *//*
+INTERIOR STYLE GOES NEXT
+/* ================================== */ 
+
+header #pencil {
+
+}
+
+#hero_pencil {
+
+
+}
+
+
+/* =================================================================
+Interior Page 
+====================================================================
+uses IDs: jumbotron-interior, interior-body-copy*/
+
+#jumbotron-interior{
+
+background-image: url("../images/hero2.jpg") ;
+background-size: cover;
+/* background-color: peachpuff; */
+height: 546px;
+}
+
+#jumbotron-interior h1 {
+font-size: 53pt;
+text-transform: uppercase;
+font-weight: 700;
+color:  #fff;
+margin-top:  191px;
+line-height: 110%;
+}
+
+#jumbotron-interior h1 span {
+font-weight: 300;
+}
+
+#jumbotron-interior p a {
+font-size: 18px;
+text-transform:  uppercase;
+color: #ffff;
+}
+
+#jumbotron-interior p a: hover {
+color: #a13b00; /* dark orange */
+}
+
+/*BODY COPY*/
+
+#interior-body-copy ul {
+	margin-top: 138px;
+}
+
+#interior-body-copy nav li {
+	text-transform: uppercase;
+	list-style: none;
+	padding:  14px 0 14px 10px;
+	border-bottom:  1px solid #ec5e28; /*Bright Orange*/
+}
+
+#interior-body-copy #why {
+	border-top:  1px solid #ec5e28;
+}
+
+#interior-body-copy div {
+	margin-top: 87px;
+	margin-bottom: 15px;
+}
+
+#interior-body-copy span {
+	color: #ec5e28;
+	font-weight: bold;
+}
+
+#interior-body-copy h2 {
+	margin-top:  45px;
+	margin-bottom: 28px;
+}
+
+/* =================================================================
+PencilNo2 Hero Image and Body Copy Section
+====================================================================
+Uses IDs:  PencilNo2; Peak; PencilNo2-bodycopy; LearnNo2; colors*/
+
+#PencilNo2 {
+
+	background-image: url("../images/hero.jpg");
+	background-size: cover;
+	background-color: peachpuff;
+	background-position: center center;
+	/*background-position: -300px;*/
+	height: auto;
+	padding-bottom: 150px;
+	padding-top:  50px;
+	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+	position: relative;
+	margin-bottom: 50px;
+
+}
+
+
+/*BODY COPY*/
+
+#PencilNo2 h1 {
+	text-transform: uppercase;
+	font-size: 53px;
+	font-weight: 300;
+	line-height: 1;
+	color: white;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	}
+
+#PencilNo2 h1 span{
+	text-transform: uppercase;
+	font-size: 90px;
+	font-weight: 700;
+
+}
+
+
+/* =================================
+BODY COPY FOR INTERIOR
+====================================
+Uses IDs:  PencilNo2; Peak; PencilNo2-bodycopy; LearnNo2; colors*/
+
+#Peak h1{
+	text-align: center;
+	margin-top: 250px;
+	
+}
+
+#Peak p{
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 50px;
+
+}
+
+
+/* =================================
+BODY COPY FOR CREATIVITY "MADE PERSONAL.""
+====================================
+Uses IDs:  PencilNo2-bodycopy; colors*/
+
+#PencilNo2-bodycopy h1 {
+	margin: 140px 0 50px 0;
+	text-align: center;
+	font-family: 50px;
+}
+
+#PencilNo2-bodycopy h5 {
+	text-align: center;
+	margin-top: -40px;
+	margin-bottom: 0px;
+	font-size: 50px;
+}
+
+#PencilNo2Body p {
+	margin-top: 50px;
+	text-align: center;
+}
+/* =================================
+INNOVATION AT ITS PEAK
+====================================
+Uses IDs:  LearnNo2; colors*/
+
+#LearnNo2 {
+	background-size: cover;
+	background-image: url("../images/iconic.png");
+	background-repeat: no-repeat;
+	/*background-color: peachpuff;*/
+	height: 1000px;
+}
+
+#LearnNo2 h2 {
+	margin-top: 100px;
+	line-height: 0.95;
+	font-size: 70px;
+}
+
+#LearnNo2 h4 {
+	margin-top: -70px;
+	font-size: 90px;
+}
+
+#LearnNo2 p {
+	margin-top: -100px;
+	margin-bottom: 100px;
+	font-size: 20px;
+	/*background-color: lightseagreen;*/
+}
+
+#LearnNo2-image {
+	height: 500px;
+	background-image: url("../images/iconic.png");
+	background-size: contain;
+	display: flex;
+	/*background-color: lightskyblue;*/
+
+}
+
+#LearnNo2-image p {
+	margin-top: 150px;
+	text-align: left;
+	font-size: 25px
+}
+
+
+/* =================================
+INNOVATION AT ITS PEAK
+====================================
+Uses IDs:  LearnNo3; colors*/
+
+#LearnNo3 h2 {
+	margin-top: 50px;
+	text-align: left ;
+}
+
+#LearnNo3 ul {
+	background: #fff;
+}
+
+
+/* =================================
+ORANGE BUTTON AND LEARN MORE STYLING
+====================================
+Uses IDs: clickhere; Learnmore*/
+
+a#clickhere {
+	padding: 10px 20px;
+	border-top-width: 50px;
+	margin-top: 10px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+	border-radius: 20px;
+	color: white;
+	background-color: #ec5e28;
+}
+
+a#clickhere:hover {
+	background-color:palevioletred;
+} 
+
+#Learnmore:hover {
+	text-decoration: underline;
+}
+
+/*=======================================
+This Section contains Properties for 2 COLOR HOVER
+=======================================
+Uses ID's: clickablesleft; clickablesright*/
+
+#clickablesleft{
+	height: 600px;
+	background-size: cover;
+	background-image: 
+		url("../images/yellow.jpeg");
+	background-color: lightskyblue;
+	background-position: center center;
+	position: relative;
+	overflow: hidden;
+}
+
+#clickablesright{
+	height: 600px;
+	background-size: cover;
+	background-image: url("../images/brunswick.jpeg");
+	background-position: center center;
+	position: relative;
+	overflow: hidden;
+}
+
+#clickablesleft:hover > img,
+#clickablesright:hover > img {
+	/*height: 600px;
+	background-size: cover;
+	background-image: 
+		url("../images/Penciltop.png"),
+		url("../images/yellow.jpeg");*/
+	bottom: 0;
+	transition: bottom 600ms ease-in;
+}
+
+#clickablesleft img,
+#clickablesright img {
+	position: absolute;
+	bottom:  -200px;
+	/*margin-left: 200px;
+	width: 300px;
+	height: 500px;*/
+	left:  400px;
+	right: auto;
+	height: 100%;
+	transition: bottom 600ms ease-out;
+}
+
+/*Body Copy Section*/
+
+#clickablesleft p {
+	color: white;
+	margin-top: 0px;
+	margin-left: 50px;
+}
+
+#clickablesleft h6 {
+	color:  white;
+	font-size: 16px;
+	margin-top: 180px;
+	margin-left: 50px;
+	margin-bottom: -5px;
+}
+
+#clickablesleft a {
+	margin-top: 10px;
+	margin-left: 50px;
+	text-align: center;
+	display: inline-block;
+}
+
+#clickablesright p {
+	color: white;
+	margin-top: 0px;
+	margin-left: 50px;
+	margin-bottom: 40px;
+}
+
+#clickablesright h6 {
+	color:  white;
+	font-size: 16px;
+	margin-top: 180px;
+	margin-left: 50px;
+	margin-bottom: -5px;
+}
+
+#clickablesright a {
+	margin-top: 10px;
+	margin-left: 50px;
+	text-align: center;
+	display: inline-block;
+}
+
+/*=======================================
+Create More. Section
+=======================================*/
+
+#createmore {
+	margin-top: -100px;
+	margin-bottom: -100px;
+}
+
+
+#createmore p {
+	text-align: center;
+	font-size: 20px;
+	padding: 70px 25px 70px 25px;
+	margin-top: -20px;
+}
+
+
+/*=======================================
+Section with the 3 IconS
+=======================================
+Uses IDs: cropped; cropped2; ReadyCrop; ReadyCrop2; ReadyCrop3; Ready-To-Crop*/
+
+.cropped {
+	height: 260px;
+	width:  400px;
+	overflow: hidden;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cropped img {
+	margin: 100px 0px 0px 0px;
+
+}
+
+.cropped2 {
+	height: 200px;
+	width:  400px;
+	overflow: hidden;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+}
+
+.cropped2 img {
+	margin: -419px 0px 0px 0px;
+
+}
+
+.ReadyCrop {
+	height: 150px;
+	width:  300px;
+	overflow: hidden;
+	/*display: block;*/
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 20px;
+}
+
+.ReadyCrop img {
+	margin: -430px 0px 0px 0px;
+}
+
+.ReadyCrop2 {
+	height: 150px;
+	width:  300px;
+	overflow: hidden;
+	/*display: block;*/
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 20px;
+}
+
+.ReadyCrop2 img {
+	margin: -590px 0px 0px 0px;
+}
+
+.ReadyCrop3 {
+	height: 150px;
+	width:  300px;
+	overflow: hidden;
+	/*display: block;*/
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 20px;
+}
+
+.ReadyCrop3 img {
+	margin: -750px 0px 0px 0px;
+}
+
+/*This is the ready-to-crop margin styling*/
+
+#Ready-To-Crop{
+	margin-bottom: 200px;
+	margin-top: 250px;
+}
+
+/*This is the ready-to-crop body copy*/
+
+#Ready-To-Crop p{
+	text-align: center;
+}
+
+/* ================================== *//*
+FOOTER STYLE
+/* ================================== */ 
+
+/* footer  ===   
+uses classes: "bright", "copyright"
+*/ 
+
+footer {
+	background-color: #252321;
+	color: #a39e93;
+	padding-top: 35px;
+	font-size: 90%;
+	margin-top: 300px;
+}
+
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer li {
+	margin-bottom: 8px;
+}
+
+footer li a {
+	color: #66615a; /* brown */
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+footer .bright li a {
+	color: #f1eae1; /* light ecru */
+}
+
+footer li a:hover {
+	color:  #c94a00; /*orange*/
+	text-decoration: underline;
+}
+
+.copyright {
+	margin-top: 50px;
+	margin-bottom: 115px;
+	font-size: 85%;
+}
+
+.copyright a {
+ 	font-weight: normal;
+ 	text-transform: none;
+}
